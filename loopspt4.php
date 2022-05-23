@@ -4,18 +4,26 @@
     <head>
         <title>loops while</title>
     </head>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+    </style>
     <body>
         <?php
+        echo "<tr>"
         $months = array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
         $daysInMonth = array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-        echo "Days In Month <br />";
+        echo "<td>Days In Month </td><br />";
         foreach ($months as $key => $month) {
-            echo $month . " ";
+            echo "<td>" . $month . " </td>";
             //echo $days = $daysInMonth[$key] . " ";
         }
         echo "<br />";
         foreach ($daysInMonth as $value => $days) {
             echo $days . " ";
+            echo "<tr />"
         }
         ?>
     </body>
