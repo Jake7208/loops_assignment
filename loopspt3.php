@@ -13,14 +13,13 @@
     <body>
         <table>
         <?php
-        echo "<tr>"
+        echo "<tr>";
         for ($x = "1"; $x <= 7; $x++) { // this runs across each row x axis
             for($y = "1"; $y <= 7; $y++) { // runs across y axis
                 
-                echo "<td>"$x * $y ." </td>"; // getting the desired output for the multiplication
+                echo "<td>" . $x * $y ." </td>"; // getting the desired output for the multiplication
             }
-            echo "<br />";
-            echo "</tr>"
+            echo "</tr>";
         }
         ?>
         </table>

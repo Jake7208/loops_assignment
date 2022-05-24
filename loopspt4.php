@@ -3,28 +3,34 @@
 <html lang="en">
     <head>
         <title>loops while</title>
-    </head>
-    <style>
-        table, th, td {
+        <style>
+        table, td, th {
         border: 1px solid black;
         border-collapse: collapse;
         }
+
     </style>
+    </head>
     <body>
+        <table>
         <?php
-        echo "<tr>"
+
         $months = array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
         $daysInMonth = array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-        echo "<td>Days In Month </td><br />";
+        echo "<tr>";
+        echo "<td align=center colspan='12'>Days In Month</th>";
+        echo "<tr />";
+        echo "<tr>";
         foreach ($months as $key => $month) {
             echo "<td>" . $month . " </td>";
             //echo $days = $daysInMonth[$key] . " ";
-        }
-        echo "<br />";
+        } echo "<tr />";
+        echo "<tr>";
         foreach ($daysInMonth as $value => $days) {
-            echo $days . " ";
-            echo "<tr />"
+            echo "<td>" . $days . " </td>";
         }
+        echo "<tr />";
         ?>
+        </table>
     </body>
 </html>
